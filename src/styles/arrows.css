@@ -1,0 +1,40 @@
+.arrows {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  margin-left: 6px;
+}
+
+.arrows__left {
+}
+
+.arrows__center {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+}
+
+.arrows__up {
+  margin-bottom: 3px;
+}
+
+.arrows__down {
+}
+
+.arrows__right {
+  margin-left: 6px;
+}
+
+.arrow-key {
+  width: 50px;
+  height: 22px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-light);
+  background-color: var(--color-main);
+  cursor: pointer;
+}

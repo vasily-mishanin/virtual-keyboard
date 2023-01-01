@@ -1,0 +1,73 @@
+const keys = {
+  firstRowChars: [
+    ['§', '±', '&#62;', '&#60;', '', 'Backquote'],
+    ['1', '!', '1', '!', '', 'Digit1'],
+    ['2', '@', '2', '&#34;', '', 'Digit2'],
+    ['3', '#', '3', '№', '', 'Digit3'],
+    ['4', '$', '4', '%', '', 'Digit4'],
+    ['5', '%', '5', ':', '', 'Digit5'],
+    ['6', '^', '6', ',', '', 'Digit6'],
+    ['7', '&', '7', '.', '', 'Digit7'],
+    ['8', '*', '8', ';', '', 'Digit8'],
+    ['9', '(', '9', '(', '', 'Digit9'],
+    ['0', ')', '0', ')', '', 'Digit0'],
+    ['-', '_', '-', '_', '', 'Minus'],
+    ['=', '+', '=', '+', '', 'Equal'],
+  ],
+
+  secondRowChars: [
+    ['q', 'Q', 'й', 'Й', 'letter', 'KeyQ'],
+    ['w', 'W', 'ц', 'Ц', 'letter', 'KeyW'],
+    ['e', 'E', 'у', 'У', 'letter', 'KeyE'],
+    ['r', 'R', 'к', 'К', 'letter', 'KeyR'],
+    ['t', 'T', 'е', 'Е', 'letter', 'KeyT'],
+    ['y', 'Y', 'н', 'Н', 'letter', 'KeyY'],
+    ['u', 'U', 'г', 'Г', 'letter', 'KeyU'],
+    ['i', 'I', 'ш', 'Ш', 'letter', 'KeyI'],
+    ['o', 'O', 'щ', 'Щ', 'letter', 'KeyO'],
+    ['p', 'P', 'з', 'З', 'letter', 'KeyP'],
+    ['[', '{', 'х', 'Х', 'letter', 'BracketLeft'],
+    [']', '}', 'ъ', 'Ъ', 'letter', 'BracketRight'],
+  ],
+
+  thirdRowChars: [
+    ['a', 'A', 'ф', 'Ф', 'letter', 'KeyA'],
+    ['s', 'S', 'ы', 'Ы', 'letter', 'KeyS'],
+    ['d', 'D', 'в', 'В', 'letter', 'KeyD'],
+    ['f', 'F', 'а', 'А', 'letter', 'KeyF'],
+    ['g', 'G', 'п', 'П', 'letter', 'KeyG'],
+    ['h', 'H', 'р', 'Р', 'letter', 'KeyH'],
+    ['j', 'J', 'о', 'О', 'letter', 'KeyJ'],
+    ['k', 'K', 'л', 'Л', 'letter', 'KeyK'],
+    ['l', 'L', 'д', 'Д', 'letter', 'KeyL'],
+    [';', ':', 'ж', 'Ж', 'letter', 'Semicolon'],
+    ['&#39;', '&#34;', 'э', 'Э', 'letter', 'Quote'],
+    ['&#92;', '&#124;', 'ё', 'Ё', 'letter', 'Backslash'],
+  ],
+
+  fourthRowChars: [
+    ['`', '~', ']', '[', '', 'IntlBackslash'],
+    ['z', 'Z', 'я', 'Я', 'letter', 'KeyZ'],
+    ['x', 'X', 'ч', 'Ч', 'letter', 'KeyX'],
+    ['c', 'C', 'с', 'С', 'letter', 'KeyC'],
+    ['v', 'V', 'м', 'М', 'letter', 'KeyV'],
+    ['b', 'B', 'и', 'И', 'letter', 'KeyB'],
+    ['n', 'N', 'т', 'Т', 'letter', 'KeyN'],
+    ['m', 'M', 'ь', 'Ь', 'letter', 'KeyM'],
+    [',', '&#60;', 'б', 'Б', 'letter', 'Comma'],
+    ['.', '&#62;', 'ю', 'Ю', 'letter', 'Period'],
+    ['/', '?', '/', '?', '', 'Slash'],
+  ],
+
+  fifthRowChars: [
+    ['Fn', '', 'Fn', '', 'function', 'Function'],
+    ['control', '', 'control', '', 'control', 'ControlLeft'],
+    ['option', '', 'option', '', 'option-left', 'AltLeft'],
+    ['command', '', 'command', '', 'command-left', 'MetaLeft'],
+    ['&#160;', '', '&#160;', '', 'space', 'Space'],
+    ['command', '', 'command', '', 'command-right', 'MetaRight'],
+    ['option', '', 'option', '', 'option-right', 'AltRight'],
+  ],
+};
+
+export default keys;
